@@ -41,7 +41,7 @@ int DaysInYearRange(DateTime t1, DateTime t2)
 {
 	assert(t1.year > t2.year);
 	int count = 0;
-	for (int i = t1.year; i < t2.year + 1; i++)
+	for (int i = t2.year; i < t1.year + 1; i++)
 	{
 		if (i % 100 != 0)
 		{
