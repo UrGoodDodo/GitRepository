@@ -20,3 +20,21 @@ bool IsLeapYear(DateTime t)
 	else
 		return (t.year % 400 == 0);
 }
+DateTime LaterInYear(DateTime t1, DateTime t2)
+{
+	if (t1.month > t2.month)
+	{
+		return t1;
+	}
+	else if (t1.month == t2.month)
+	{
+		if (t1.day > t2.day)
+		{
+			return t1;
+		}
+		else
+			return t2;
+	}
+	else
+		return t2;
+}
